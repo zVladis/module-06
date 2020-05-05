@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kaushan Script", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* Header____________________________________________________________ */
+
+.logo {
+  width: 86px;
+  height: 23px;
+  color: #95e1d3;
+  text-decoration: none;
+
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.nav {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__list-item {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 490px;
+}
+
+.nav__list-item-link {
+  text-decoration: none;
+  color: #95e1d3;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+.nav__list-item-link:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+.nav__list-item-link::after {
+  display: block;
+  width: 100%;
+  content: "";
+  height: 2px;
+  bottom: -8px;
+  background-color: #f38181;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s linear;
+}
+.nav__list-item-link:hover {
+  color: #f38181;
+}
+/* Section service________________________________________________________- */
+
+.servise-title-wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.title-servise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.title-servise::after {
+  display: table;
+  content: "";
+  clear: both;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin-top: 42px;
+}
+
+.subtitle-service {
+  color: #333333;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  text-transform: none;
+}
+
+.servises__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+
+.servises__list-item {
+  width: 382px;
+  list-style-type: none;
+}
+.servises__list-item-title {
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.servises__list-item-descript {
+  color: #999999;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* section TEAm_____________________________________________________ */
+.team-title-wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.title-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title-team::after {
+  display: table;
+  content: "";
+  clear: both;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin-top: 42px;
+}
+
+.subtitle-team {
+  color: #333333;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  text-transform: none;
+}
+.team-descript-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.team-descript {
+  width: 941px;
+  color: #999999;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 80px;
+}
