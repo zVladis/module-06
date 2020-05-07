@@ -1,15 +1,34 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Kaushan Script", cursive;
   font-family: "Montserrat", sans-serif;
   font-family: "Roboto", sans-serif;
 }
-
+html {
+  box-sizing: border-box;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* Header____________________________________________________________ */
@@ -122,10 +141,7 @@ body {
   list-style-type: none;
   position: relative;
   padding-left: 50px;
-
-
 }
-
 
 .servises__list-item:nth-child(n + 4) {
   margin-top: 100px;
@@ -204,8 +220,6 @@ body {
 
 /* icon---------------------------------------------------------------------------- */
 
-
-
 .photography::before {
   display: block;
   content: "";
@@ -215,7 +229,6 @@ body {
   top: 16px;
   left: 0;
   position: absolute;
-
 }
 
 .web-design::before {
@@ -227,8 +240,6 @@ body {
   top: 16px;
   left: 0;
   position: absolute;
-
-
 }
 
 .creativity::before {
@@ -240,8 +251,6 @@ body {
   top: 16px;
   left: 0;
   position: absolute;
-
-
 }
 
 .seo::before {
@@ -253,8 +262,6 @@ body {
   top: 16px;
   left: 0;
   position: absolute;
-
-
 }
 
 .css::before {
@@ -266,8 +273,6 @@ body {
   top: 16px;
   left: 0;
   position: absolute;
-
-
 }
 
 .digital::before {
@@ -279,32 +284,35 @@ body {
   top: 16px;
   left: 0;
   position: absolute;
-
-
 }
 
 /* section 2 ______________________________________________________________ */
-
-.team-photo__list {
+.our-dev {
   display: flex;
-  /* position: relative; */
-
+  justify-content: space-around;
+}
+.team-image {
 }
 
-.team-photo__list-item {
-  list-style-type: none;
+.name-dev {
+  text-align: center;
+}
+.position-dev {
+  text-align: center;
+}
+/* overlay+++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* icon+++++++++++++++++++++++++++++++++= */
+.facebook {
+  background-image: url("../img/icons/facebook.png");
 }
 
-/* .photo-dev:hover {
-  width: 380px;
-  height: 470px;
-  background-color: #95e1d3;
-  transform: translate(10px 10px);
-  position: absolute; */
-
+.twitter {
+  background-image: url("../img/icons/twitter.png");
 }
-
-
-.team-photo__list-item:not(:last-child) {
-  margin-right: 30px;
+.pinterest {
+  background-image: url("../img/icons/pinterest.png");
+}
+.instagram {
+  background-image: url("../img/icons/instagram.png");
 }
