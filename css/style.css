@@ -5,13 +5,16 @@ body {
   font-family: "Montserrat", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+
 html {
   box-sizing: border-box;
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -291,28 +294,89 @@ img {
   display: flex;
   justify-content: space-around;
 }
-.team-image {
+
+.overlay-list__item {
+  list-style-type: none;
 }
 
-.name-dev {
-  text-align: center;
+.team-image {
+  position: relative;
+  list-style-type: none;
+
 }
+
+.team-image:not(:last-child) {
+  margin-right: 30px;
+}
+
+.card-dev {
+  background-color: #95e1d3;
+}
+
+.team-image:hover .overlay {
+  opacity: .5;
+  transform: translate();
+
+  /* box-shadow: 10px 9px 1px 2px rgb(149, 225, 211); */
+  /* background: linear-gradient(to top, #ee0979 → #ff6a00) */
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 453.5px;
+  background: linear-gradient(to top, #975595, #e94057, #f27121);
+  opacity: 0;
+  transform: translate(-10px -10px);
+
+}
+
+
+.name-dev {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .position-dev {
   text-align: center;
+  color: #999999;
+  font-family: "Roboto - Light Italic";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
 }
+
 /* overlay+++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.icon-list {}
 
 /* icon+++++++++++++++++++++++++++++++++= */
 .facebook {
   background-image: url("../img/icons/facebook.png");
+  width: 56px;
+  height: 56px;
 }
 
 .twitter {
   background-image: url("../img/icons/twitter.png");
+  width: 56px;
+  height: 56px;
 }
+
 .pinterest {
   background-image: url("../img/icons/pinterest.png");
+  width: 56px;
+  height: 56px;
 }
+
 .instagram {
   background-image: url("../img/icons/instagram.png");
+  width: 56px;
+  height: 56px;
 }
