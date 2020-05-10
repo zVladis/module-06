@@ -292,7 +292,9 @@ img {
 /* section 2 ______________________________________________________________ */
 .our-dev {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .overlay-list__item {
@@ -300,13 +302,7 @@ img {
 }
 
 .team-image {
-  position: relative;
   list-style-type: none;
-
-}
-
-.team-image:not(:last-child) {
-  margin-right: 30px;
 }
 
 .card-dev {
@@ -314,69 +310,140 @@ img {
 }
 
 .team-image:hover .overlay {
-  opacity: .5;
-  transform: translate();
+  opacity: 0.9;
+}
 
-  /* box-shadow: 10px 9px 1px 2px rgb(149, 225, 211); */
-  /* background: linear-gradient(to top, #ee0979 → #ff6a00) */
+.wrapper-img:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0 #95e1d3;
+  position: relative;
 }
 
 .overlay {
   position: absolute;
   width: 100%;
-  height: 453.5px;
-  background: linear-gradient(to top, #975595, #e94057, #f27121);
+  height: 470px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.7) 0%,
+    rgba(243, 129, 129, 0.7) 100%
+  );
   opacity: 0;
-  transform: translate(-10px -10px);
-
 }
 
-
 .name-dev {
-  margin-bottom: 20px;
   text-align: center;
   color: #333333;
   font-family: "Montserrat";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
 .position-dev {
   text-align: center;
   color: #999999;
-  font-family: "Roboto - Light Italic";
+  font-family: "Roboto";
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  font-style: italic;
 }
 
 /* overlay+++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-
-.icon-list {}
+.icon-list {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-list:hover {
+  background-color: rgba(26, 188, 156, 0.9);
+}
+.overlay-list {
+  display: flex;
+  padding: 210px 0 0 80px;
+  flex-direction: row;
+}
 
 /* icon+++++++++++++++++++++++++++++++++= */
 .facebook {
   background-image: url("../img/icons/facebook.png");
-  width: 56px;
-  height: 56px;
 }
 
 .twitter {
   background-image: url("../img/icons/twitter.png");
-  width: 56px;
-  height: 56px;
 }
 
 .pinterest {
   background-image: url("../img/icons/pinterest.png");
-  width: 56px;
-  height: 56px;
 }
 
 .instagram {
   background-image: url("../img/icons/instagram.png");
-  width: 56px;
-  height: 56px;
+}
+
+/* footer__________________________________________________________________________- */
+
+.line {
+  margin-top: 70px;
+  width: 1200px;
+  height: 1px;
+  background-color: #e5e5e5;
+  opacity: 0.5;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.footer:before {
+  width: 1200px;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.footer-text {
+  color: #333333;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer-link {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  color: #f38181;
+  text-decoration: none;
+}
+
+.contact-form__imput {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+  background-color: #ffffff;
+
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+.contact-form-btn {
+  width: 150px;
+  height: 44px;
+  background-color: #95e1d3;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
