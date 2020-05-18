@@ -1,9 +1,16 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Kaushan Script", cursive;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto", sans-serif;
+  font-family: "Kaushan Script", cursive, "Montserrat", sans-serif, "Roboto",
+    sans-serif;
 }
 
 html {
@@ -95,7 +102,7 @@ img {
 
 /* Section service________________________________________________________- */
 
-.servise-title-wrapp {
+.servise-title-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,7 +147,7 @@ img {
 }
 
 .servises__list-item {
-  width: 270px;
+  width: 350px;
   list-style-type: none;
   position: relative;
   padding-left: 50px;
@@ -158,7 +165,7 @@ img {
   text-transform: uppercase;
 }
 
-.servises__list-item-descript {
+.servises__list-item-description {
   color: #999999;
   font-family: "Roboto";
   font-size: 15px;
@@ -168,7 +175,7 @@ img {
 }
 
 /* section TEAm_____________________________________________________ */
-.team-title-wrapp {
+.team-title-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,12 +212,12 @@ img {
   text-transform: none;
 }
 
-.team-descript-wrapper {
+.team-description-wrapper {
   display: flex;
   justify-content: center;
 }
 
-.team-descript {
+.team-description {
   width: 941px;
   color: #999999;
   font-family: "Roboto";
@@ -223,70 +230,38 @@ img {
 
 /* icon---------------------------------------------------------------------------- */
 
-.photography::before {
+.servises__list-item::before {
   display: block;
   content: "";
   width: 32px;
   height: 31px;
-  background-image: url("../img/ALARM.png");
   top: 16px;
   left: 0;
   position: absolute;
+}
+
+.photography::before {
+  background-image: url("../img/ALARM.png");
 }
 
 .web-design::before {
-  display: block;
-  content: "";
-  width: 32px;
-  height: 31px;
   background-image: url("../img/LINE_GRAPH.png");
-  top: 16px;
-  left: 0;
-  position: absolute;
 }
 
 .creativity::before {
-  display: block;
-  content: "";
-  width: 32px;
-  height: 31px;
   background-image: url("../img/COMPUTER_/_OK.png");
-  top: 16px;
-  left: 0;
-  position: absolute;
 }
 
 .seo::before {
-  display: block;
-  content: "";
-  width: 32px;
-  height: 31px;
   background-image: url("../img/BOOK_2.png");
-  top: 16px;
-  left: 0;
-  position: absolute;
 }
 
 .css::before {
-  display: block;
-  content: "";
-  width: 32px;
-  height: 31px;
   background-image: url("../img/HOME.png");
-  top: 16px;
-  left: 0;
-  position: absolute;
 }
 
 .digital::before {
-  display: block;
-  content: "";
-  width: 32px;
-  height: 31px;
   background-image: url("../img/IMAGE.png");
-  top: 16px;
-  left: 0;
-  position: absolute;
 }
 
 /* section 2 ______________________________________________________________ */
@@ -317,18 +292,18 @@ img {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px 0 #95e1d3;
   position: relative;
+  transition: all 1s ease;
 }
 
 .overlay {
   position: absolute;
-  width: 100%;
+  width: 380px;
   height: 470px;
-  background-image: linear-gradient(
-    0deg,
-    rgba(252, 227, 138, 0.7) 0%,
-    rgba(243, 129, 129, 0.7) 100%
-  );
+  background-image: linear-gradient(0deg,
+      rgba(252, 227, 138, 0.7) 0%,
+      rgba(243, 129, 129, 0.7) 100%);
   opacity: 0;
+
 }
 
 .name-dev {
@@ -356,17 +331,19 @@ img {
   display: block;
   width: 56px;
   height: 56px;
-  background-color: #fce38a;
+  background-color: rgba(252, 227, 138, 1);
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .icon-list:hover {
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(26, 188, 156, 1);
 }
+
 .overlay-list {
   display: flex;
   padding: 210px 0 0 80px;
-  flex-direction: row;
+
 }
 
 /* icon+++++++++++++++++++++++++++++++++= */
@@ -395,11 +372,14 @@ img {
   background-color: #e5e5e5;
   opacity: 0.5;
 }
+
 .footer {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
+
 .footer:before {
   width: 1200px;
   height: 1px;
@@ -410,30 +390,29 @@ img {
   color: #333333;
   font-family: "Montserrat";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
+
 .footer-link {
   font-family: "Montserrat";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: #f38181;
   text-decoration: none;
 }
 
 .contact-form__imput {
   width: 230px;
-  height: 40px;
-  border: 1px solid #e7e7e7;
-  background-color: #ffffff;
-
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0);
   font-family: "Roboto";
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   font-style: italic;
-  padding: 0;
-  margin: 0;
+  border: 1px solid #e7e7e7;
 }
+
 .contact-form-btn {
   width: 150px;
   height: 44px;
@@ -444,6 +423,9 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-  padding: 0;
-  margin: 0;
+  border: 0;
+}
+
+.contact-form {
+  display: flex;
 }
